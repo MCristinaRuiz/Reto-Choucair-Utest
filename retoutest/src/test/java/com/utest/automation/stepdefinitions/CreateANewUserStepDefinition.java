@@ -44,7 +44,8 @@ public class CreateANewUserStepDefinition {
     @Then("the client can see information on how to get started with uTest")
     public void theClientCanSeeInformationOnHowToGetStartedWithUTest() {
         theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(Message.ofWelcomeMessage(), Matchers.equalTo(true)).orComplainWith(AccountCreationFailed.class)
+                GivenWhenThen.seeThat(Message.ofWelcomeMessage(), Matchers.equalTo(true))
+                        .orComplainWith(AccountCreationFailed.class)
         );
     }
 }

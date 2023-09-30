@@ -14,3 +14,4 @@ Feature: Create a new user
     Examples:
       | computer  | version          | language | mobile | model         | system        |
       | Windows   | Windows 11 Home  | Spanish  | Apple  | iPhone 13 Pro | iOS 15.6 Beta |
+
